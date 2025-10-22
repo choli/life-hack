@@ -47,4 +47,6 @@ list all my entries:
       •
     {%- endif -%}
   {%- endif -%}
+
+[Subscribe to our Podcast](https://choli.github.io/life-hack/feed.xml)
 {%- endif -%}

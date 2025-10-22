@@ -1,0 +1,41 @@
+name: Update Podcast Feed
+
+on:
+  push:
+    paths:
+      - "docs/assets/podcast/*.mp3"
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Check out the repository
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    # Step 2: Set up Python (or Node.js, depending on your script)
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.x"
+
+    # Step 3: Install dependencies (if needed)
+    - name: Install dependencies
+      run: pip3 install markdown pyyaml
+
+    # Step 4: Run the script to update the feed
+    - name: Update RSS Feed
+      run: |
+        python scripts/update_feed.py
+
+    # Step 5: Commit and push changes
+    - name: Commit and push changes
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --global user.name "Choli Actions"
+        git config --global user.email "choli@github.com"
+        git add docs/feed.xml
+        git commit -m "Update RSS feed for new podcast episode"
+        git push

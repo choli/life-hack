@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0">
   <channel>
     <title>Your Podcast Title</title>
@@ -12,5 +12,13 @@
 
     
     
-  </channel>
+  <item><title>Episode 0: Absoluter Anfängertest</title><description>&lt;h1&gt;Hallo Welt&lt;/h1&gt;
+&lt;p&gt;Sie werden in diesem Anfängerprojekt absolut gar rein nichts finden ausser einen Link zu &lt;a href="https://roggeli.ch"&gt;Lokomotive Roggeli&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Und vielleicht noch eine Liste, einfach um zu schauen, was passiert:
+- Eins
+- Zwei
+- Was noch?&lt;/p&gt;
+&lt;p&gt;Merci fürs testen.&lt;/p&gt;
+&lt;h2&gt;Tschüss&lt;/h2&gt;
+&lt;p&gt;Genau, mein h2 ist das bye bye&lt;/p&gt;</description><link>https://choli.github.io/life-hack/assets/podcast/000test1.mp3</link><guid>https://choli.github.io/life-hack/assets/podcast/000test1.mp3</guid><pubDate>Wed, 22 Oct 2025 20:11:33 +0000</pubDate><enclosure url="https://choli.github.io/life-hack/assets/podcast/000test1.mp3" length="3196963" type="audio/mpeg" /></item></channel>
 </rss>
